@@ -41,15 +41,21 @@ class MainActivity : AppCompatActivity() {
 
         downloadBtn.setOnClickListener {
 
-            downloadApp("https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bm1xnhkwswfs/b/bucket-db/o/app-debug.apk")
+            //downloadApp("https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bm1xnhkwswfs/b/bucket-db/o/app-debug.apk")
             //downloadFile(this@MainActivity, URL, "app-debug.apk")
 
+            openBrowser()
         }
 
 
 
     }
 
+
+    fun openBrowser(){
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(URL))
+        startActivity(browserIntent)
+    }
 
     private fun downloadApp(downloadUrl: String?) {
 

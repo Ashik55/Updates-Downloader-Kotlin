@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Update Downloader</string>
+    <string name="unable_to_open_file">Sorry unable to open</string>
+</resources>
